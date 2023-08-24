@@ -9,9 +9,6 @@ public class UserData {
 
 	public void getData(DataSource ds) {
 
-		nomeCompleto = ds.getNomeCompleto();
-		eta = ds.getEta();
-
 	}
 
 }
