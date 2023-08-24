@@ -2,8 +2,8 @@ package com.example.DesignPatterns.ES1Adapter;
 
 public class UserData {
 
-	private String nomeCompleto;
-	private int eta;
+	public String nomeCompleto;
+	public int eta;
 
 	public void getData(DataSource ds) {
 
