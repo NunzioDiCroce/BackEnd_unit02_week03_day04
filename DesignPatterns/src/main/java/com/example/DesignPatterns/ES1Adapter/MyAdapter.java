@@ -1,5 +1,8 @@
 package com.example.DesignPatterns.ES1Adapter;
 
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 public class MyAdapter implements DataSource {
 
 	private Info info;
@@ -11,13 +14,15 @@ public class MyAdapter implements DataSource {
 	@Override
 	public String getNomeCompleto() {
 		// TODO Auto-generated method stub
-		return null;
+		return info.getNome() + " " + info.getCognome();
 	}
 
 	@Override
 	public int getEta() {
 		// TODO Auto-generated method stub
-		return 0;
+		Date dataDiNascita = info.getDataDiNascita();
+		Date today = new Date();
+		return (int) TimeUnit.MILLISECONDS.toDays(today.getTime() - dataDiNascita.getTime());
 	}
 
 }
