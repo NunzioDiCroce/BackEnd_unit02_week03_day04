@@ -14,7 +14,7 @@ public class Client {
 		tenente.setNextUfficiale(colonnello);
 		colonnello.setNextUfficiale(generale);
 
-		int importoVerifica = 3500;
+		int importoVerifica = 2000;
 
 		capitano.controlloImporto(importoVerifica);
 	}
