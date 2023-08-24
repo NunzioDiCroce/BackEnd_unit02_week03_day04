@@ -6,7 +6,7 @@ public class Info {
 
 	private String nome;
 	private String cognome;
-	private Date data;
+	private Date dataDiNascita;
 
 	public String getNome() {
 		return nome;
@@ -24,12 +24,12 @@ public class Info {
 		this.cognome = cognome;
 	}
 
-	public Date getData(Date data) {
-		return this.data = data;
+	public Date getDataDiNascita() {
+		return dataDiNascita;
 	}
 
-	public void Data(Date data) {
-		this.data = data;
+	public void DataDiNascita(Date dataDiNascita) {
+		this.dataDiNascita = dataDiNascita;
 	}
 
 }
